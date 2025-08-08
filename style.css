@@ -567,6 +567,19 @@ select.form-control {
   font-size: var(--font-size-sm);
 }
 
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; /* Perfect circle crop */
+  max-width: 200%;
+  max-height: 200%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+
 .status--success {
   background-color: rgba(
     var(--color-success-rgb, 33, 128, 141),
