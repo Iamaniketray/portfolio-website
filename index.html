@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket Kumar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home">Aniket Kumar</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Aniket Kumar</span>
+                    </h1>
+                    <p class="hero-subtitle">B.Tech. CS & Engineering (AI/ML) | Full-Stack Developer</p>
+                    <p class="hero-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Begusarai, Bihar, India
+                    </p>
+                    <p class="hero-description">
+                        Fresher developer with a strong foundation in web development, JavaScript, and machine learning. 
+                        Skilled at building responsive, user-friendly web interfaces and implementing data-driven solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="#contact" class="btn btn--outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-photo">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Computer Science student specializing in AI/ML with a strong foundation in full-stack development. I enjoy creating innovative solutions and constantly learning new technologies to stay ahead in the rapidly evolving tech landscape.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">7.75</div>
+                            <div class="stat-label">CGPA/10</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">150+</div>
+                            <div class="stat-label">DSA Problems</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">13+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Frameworks & Tools</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">ReactJS</span>
+                                <span class="skill-tag">Flask</span>
+                                <span class="skill-tag">WordPress</span>
+                                <span class="skill-tag">Figma</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Database & Others</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">GitHub</span>
+                                <span class="skill-tag">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>B.Tech. CS & Engineering (AI/ML)</h3>
+                        <h4>Haldia Institute Of Technology</h4>
+                        <span class="timeline-date">2022 - 2026</span>
+                        <div class="timeline-grade">CGPA: 7.75/10</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>12th Standard</h3>
+                        <h4>Government Kalyan Singh High School, Begusarai</h4>
+                        <span class="timeline-date">2021</span>
+                        <div class="timeline-grade">73.40%</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>10th Standard</h3>
+                        <h4>Government Kalyan Singh High School, Begusarai</h4>
+                        <span class="timeline-date">2019</span>
+                        <div class="timeline-grade">76%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Internships</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="card-header">
+                        <h3>Technology Job Simulation</h3>
+                        <span class="company">Deloitte</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="duration">02 Jul, 2025 - 03 Jul, 2025</div>
+                        <p>Successfully completed the Deloitte Technology Job Simulation, gaining hands-on experience in coding, software development, and problem-solving.</p>
+                        <div class="skills-used">
+                            <span class="skill-pill">Architecture Diagram</span>
+                            <span class="skill-pill">Technical Communication</span>
+                            <span class="skill-pill">AWS Pricing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="card-header">
+                        <h3>Web Development Intern</h3>
+                        <span class="company">NIT Jalandhar</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="duration">01 Apr, 2025 - 15 May, 2025</div>
+                        <p>Successfully completed a 45-day online internship contributing to the development of a research group's website.</p>
+                        <div class="skills-used">
+                            <span class="skill-pill">HTML</span>
+                            <span class="skill-pill">CSS</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">Flask</span>
+                            <span class="skill-pill">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Website Development - NIT Jalandhar</h3>
+                        <p>Developed a dynamic and responsive website for a research group at NIT Jalandhar. Contributed to both frontend and backend development.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">ReactJS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Iamaniketray/prototype" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Time-Series ETS Decomposition</h3>
+                        <p>Demonstrates ETS decomposition using Python to analyze time series data with additive and multiplicative models applied to International Airline Passengers dataset.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Statsmodels</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Iamaniketray/Time-Series-ETS-Decomposition" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>ChronoLedger</h3>
+                        <p>Java-based desktop application built using JavaFX to manage and track time-stamped ledger entries in a secure and organized manner.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">OOPs</span>
+                            <span class="tech-tag">JavaFX</span>
+                            <span class="tech-tag">Java Swing</span>
+                            <span class="tech-tag">File Handling</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Iamaniketray/Chronoledger" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3>In-House Training</h3>
+                    <p>Web Development, Machine Learning, and Cloud Computing training</p>
+                    <div class="cert-skills">
+                        <span class="cert-skill">Python</span>
+                        <span class="cert-skill">React.js</span>
+                        <span class="cert-skill">AWS</span>
+                        <span class="cert-skill">Google Cloud</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <h3>Solutions Architecture Job Simulation</h3>
+                    <p>Foundational knowledge in cloud computing, system design, and deployment strategies</p>
+                    <div class="cert-skills">
+                        <span class="cert-skill">AWS</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <h3>Introduction to Large Language Models</h3>
+                    <p>Strong foundation in LLM architecture, training methods, and real-world applications</p>
+                    <div class="cert-skills">
+                        <span class="cert-skill">LLM Architecture</span>
+                        <span class="cert-skill">Prompt Engineering</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <h3>Java Programming: Duke University</h3>
+                    <p>Java programming fundamentals and problem-solving strategies via Coursera</p>
+                    <div class="cert-skills">
+                        <span class="cert-skill">Java</span>
+                        <span class="cert-skill">OOPs</span>
+                        <span class="cert-skill">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+            <div class="achievement-highlight">
+                <i class="fas fa-trophy"></i>
+                <span>Solved 150+ Data Structures & Algorithms problems in Java</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:aniketbgs07@gmail.com">aniketbgs07@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919798901574">+91-9798901574</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Iamaniketray" target="_blank">GitHub</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Begusarai, Bihar, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Aniket Kumar. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Iamaniketray" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:aniketbgs07@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
