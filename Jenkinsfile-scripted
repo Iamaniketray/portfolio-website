@@ -1,0 +1,19 @@
+node {
+
+    stage('Clone Repository') {
+        git branch: 'main',
+            url: 'https://github.com/Iamaniketray/portfolio-website.git'
+    }
+
+    stage('Build') {
+        echo "Static website - No build required"
+    }
+
+    stage('Echo Build Status') {
+        echo "Scripted Pipeline Build Successful!"
+    }
+
+    stage('Archive Artifacts') {
+        archiveArtifacts artifacts: '**/*.*'
+    }
+}
