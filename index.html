@@ -1,422 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-scheme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aniket Kumar - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#080d14">
+    <meta name="description" content="Aniket Kumar is a Cloud, DevOps, DevSecOps, and AI/ML engineer building secure cloud-native systems and intelligent applications.">
+    <title>Aniket Kumar — Cloud, DevOps &amp; AI/ML Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <div class="page-noise" aria-hidden="true"></div>
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
         <div class="nav-container">
-            <div class="nav-brand">
-                <a href="#home">Aniket Kumar</a>
-            </div>
+            <a class="nav-brand" href="#home" aria-label="Aniket Kumar, home">
+                <span class="brand-mark">A<span>K</span></span>
+                <span class="brand-name">Aniket Kumar<small>Cloud · DevOps · AI/ML</small></span>
+            </a>
             <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#education" class="nav-link">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Credentials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-controls">
-                <button class="theme-toggle" id="theme-toggle">
-                    <i class="fas fa-moon"></i>
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
+                    <i class="fas fa-sun" aria-hidden="true"></i>
                 </button>
-                <div class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                <a class="nav-cta" href="#contact">Let’s talk <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation" aria-controls="nav-menu" aria-expanded="false">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-shape shape-1"></div>
-            <div class="hero-shape shape-2"></div>
-            <div class="hero-shape shape-3"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="text-gradient">Aniket Kumar</span>
-                    </h1>
-                    <p class="hero-subtitle">B.Tech. CSE(AI/ML) | JAVA | Full-Stack Developer</p>
-                    <p class="hero-location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        Begusarai, Bihar, India
-                    </p>
-                    <p class="hero-description">
-                        Fresher developer with a strong foundation in JAVA , OOPS , DSA ,Web Development and Machine Learning. 
-                        Skilled at building responsive, user-friendly web interfaces and implementing data-driven solutions.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn--primary">View Projects</a>
-                        <a href="#contact" class="btn btn--outline">Contact Me</a>
+    <main>
+        <section id="home" class="hero section-shell">
+            <div class="hero-grid-bg" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow--one" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow--two" aria-hidden="true"></div>
+            <div class="container hero-layout">
+                <div class="hero-copy">
+                    <div class="availability"><span class="status-dot"></span> Cloud · DevOps · AI/ML</div>
+                    <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> Engineer in the making · Begusarai, India</p>
+                    <h1 class="hero-title">Building what’s<br>next in <span class="text-gradient">the cloud.</span></h1>
+                    <p class="hero-name">I’m <strong>Aniket Kumar</strong></p>
+                    <p class="hero-role">Cloud, DevOps, DevSecOps <span>&amp;</span> AI/ML Engineer</p>
+                    <p class="hero-description">A Computer Science engineer focused on cloud-native delivery and intelligent applications. I’ve completed a five-month Cloud Computing internship program and am currently undergoing AI training at Freelancer.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn--primary">Explore my work <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#contact" class="btn btn--quiet"><span class="play-icon"><i class="fas fa-paper-plane" aria-hidden="true"></i></span> Get in touch</a>
                     </div>
-                </div>
-                <div class="hero-image">
-                    <div class="hero-photo">
-                        <div class="photo-placeholder">
-                            <img src="aniketphoto.png" alt="Aniket Kumar" class="profile-photo">
-                            </div>
+                    <div class="hero-proof">
+                        <span class="proof-label">FOCUS AREAS</span>
+                        <div class="focus-tags">
+                            <span>AWS &amp; Azure</span><span>DevSecOps</span><span>AI / ML</span>
                         </div>
                     </div>
+                </div>
+
+                <div class="hero-visual" aria-label="Cloud engineering and AI focus">
+                    <div class="visual-orbit visual-orbit--outer" aria-hidden="true"></div>
+                    <div class="visual-orbit visual-orbit--inner" aria-hidden="true"></div>
+                    <div class="visual-node visual-node--aws"><i class="fab fa-aws" aria-hidden="true"></i><span>AWS</span></div>
+                    <div class="visual-node visual-node--azure"><i class="fa-solid fa-cloud" aria-hidden="true"></i><span>Azure</span></div>
+                    <div class="visual-node visual-node--ai"><i class="fa-solid fa-brain" aria-hidden="true"></i><span>AI / ML</span></div>
+                    <div class="profile-frame">
+                        <div class="profile-frame__top"><span>PROFILE / 01</span><span class="frame-status"><i class="fas fa-circle" aria-hidden="true"></i> OPEN TO OPPORTUNITIES</span></div>
+                        <div class="profile-photo-wrap">
+                            <div class="profile-aura" aria-hidden="true"></div>
+                            <img src="aniketphoto.png" alt="Portrait of Aniket Kumar" class="profile-photo">
+                        </div>
+                        <div class="profile-frame__bottom">
+                            <div><span class="profile-label">CURRENTLY BUILDING TOWARD</span><strong>Cloud-native · Secure · Intelligent</strong></div>
+                            <i class="fas fa-arrow-down-long" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="terminal-card" aria-label="Cloud engineering toolkit">
+                        <div class="terminal-head"><span class="terminal-dots"><i></i><i></i><i></i></span><span>aniket@cloud-lab:~</span><i class="fas fa-ellipsis" aria-hidden="true"></i></div>
+                        <div class="terminal-body">
+                            <p><span class="terminal-prompt">$</span> terraform <b>plan</b></p>
+                            <p class="terminal-output"><i class="fas fa-check"></i> Infrastructure as Code</p>
+                            <p><span class="terminal-prompt">$</span> docker <b>build</b> --secure</p>
+                            <p class="terminal-output"><i class="fas fa-check"></i> DevSecOps · CI/CD</p>
+                            <p><span class="terminal-prompt">$</span> python <b>ai_pipeline.py</b></p>
+                        </div>
+                    </div>
+                    <span class="visual-caption"><span></span> BUILDING AT THE INTERSECTION OF CLOUD + AI</span>
                 </div>
             </div>
-        </div>
-    </section>
+            <a class="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><i class="fas fa-arrow-down" aria-hidden="true"></i></a>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate Computer Science student specializing in AI/ML with a strong foundation in full-stack development. I enjoy creating innovative solutions and constantly learning new technologies to stay ahead in the rapidly evolving tech landscape.</p>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-number">7.75</div>
-                            <div class="stat-label">CGPA/10</div>
+        <section id="about" class="section section-about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT ME</p>
+                    <h2>Engineering with <span class="text-gradient">purpose.</span></h2>
+                    <p class="section-intro">I’m interested in the systems behind great products—from resilient cloud infrastructure to thoughtful AI.</p>
+                </div>
+                <div class="about-layout">
+                    <div class="about-main glass-card reveal">
+                        <div class="card-index">01 <span>/ ABOUT</span></div>
+                        <h3>Curious by nature.<br><span>Builder by practice.</span></h3>
+                        <p>Completed a 5-month Cloud Computing internship program with practical exposure to AWS, Microsoft Azure, Docker, Kubernetes, and cloud-native application deployment. Currently undergoing AI training at Freelancer, focusing on Artificial Intelligence, Machine Learning, and modern AI-driven solutions.</p>
+                        <p>Passionate about leveraging software engineering, cloud, and AI technologies to develop innovative products and eager to contribute as a Software Developer, Cloud Engineer, or AI Engineer.</p>
+                        <div class="about-location"><i class="fas fa-location-dot" aria-hidden="true"></i> Begusarai, Bihar, India <span></span> B.Tech CSE (AI &amp; ML)</div>
+                    </div>
+                    <div class="about-aside">
+                        <div class="stats-grid">
+                            <article class="stat-card reveal"><span class="stat-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span><strong class="stat-number">7.89</strong><span class="stat-label">B.Tech CGPA</span></article>
+                            <article class="stat-card reveal"><span class="stat-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span><strong class="stat-number">250+</strong><span class="stat-label">DSA problems in Java</span></article>
+                            <article class="stat-card reveal"><span class="stat-icon"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i></span><strong class="stat-number">5</strong><span class="stat-label">Months in Cloud Computing</span></article>
+                            <article class="stat-card reveal"><span class="stat-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></span><strong class="stat-number">1st</strong><span class="stat-label">College coding competition</span></article>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">3+</div>
-                            <div class="stat-label">Projects</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">150+</div>
-                            <div class="stat-label">DSA Problems</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">13+</div>
-                            <div class="stat-label">Technologies</div>
-                        </div>
+                        <div class="about-note reveal"><span class="note-icon"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i></span><p>Cloud platforms, secure delivery, and applied AI—<strong>one connected engineering practice.</strong></p></div>
                     </div>
                 </div>
-                <div class="skills-container">
-                    <h3>Technical Skills</h3>
+
+                <div class="skills-section reveal">
+                    <div class="skills-heading"><div><p class="eyebrow">THE TOOLKIT</p><h3>Skills &amp; technologies</h3></div><span class="skills-caption">A growing, hands-on stack</span></div>
                     <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4>Languages</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Frameworks & Tools</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">ReactJS</span>
-                                <span class="skill-tag">Flask</span>
-                                <span class="skill-tag">WordPress</span>
-                                <span class="skill-tag">Figma</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Database & Others</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">SQL</span>
-                                <span class="skill-tag">GitHub</span>
-                                <span class="skill-tag">Problem Solving</span>
-                            </div>
-                        </div>
+                        <article class="skill-panel">
+                            <div class="skill-panel__title"><span class="skill-icon"><i class="fa-solid fa-cloud" aria-hidden="true"></i></span><div><h4>Cloud &amp; DevOps</h4><span>INFRASTRUCTURE / DELIVERY</span></div></div>
+                            <div class="skill-tags"><span>AWS</span><span>Microsoft Azure</span><span>Google Cloud</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Jenkins</span><span>CI/CD</span><span>Linux</span></div>
+                        </article>
+                        <article class="skill-panel">
+                            <div class="skill-panel__title"><span class="skill-icon skill-icon--violet"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span><div><h4>DevSecOps &amp; Security</h4><span>SECURE BY DESIGN</span></div></div>
+                            <div class="skill-tags"><span>DevSecOps</span><span>Cloud Security</span><span>IAM</span><span>IaC</span><span>Monitoring &amp; Logging</span></div>
+                        </article>
+                        <article class="skill-panel">
+                            <div class="skill-panel__title"><span class="skill-icon skill-icon--blue"><i class="fa-solid fa-brain" aria-hidden="true"></i></span><div><h4>AI &amp; Machine Learning</h4><span>INTELLIGENT SYSTEMS</span></div></div>
+                            <div class="skill-tags"><span>Machine Learning</span><span>Deep Learning</span><span>GAN</span><span>Transformers</span><span>UneXt</span><span>Image Segmentation</span><span>Pix2PixHD</span></div>
+                        </article>
+                        <article class="skill-panel">
+                            <div class="skill-panel__title"><span class="skill-icon skill-icon--orange"><i class="fa-solid fa-terminal" aria-hidden="true"></i></span><div><h4>Development &amp; Practice</h4><span>BUILD / COLLABORATE</span></div></div>
+                            <div class="skill-tags"><span>Python</span><span>Java</span><span>JavaScript</span><span>SQL</span><span>HTML5</span><span>CSS3</span><span>Git &amp; GitHub</span><span>Agile / Scrum</span><span>SDLC</span><span>Jira</span><span>VS Code</span></div>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>B.Tech. CS & Engineering (AI/ML)</h3>
-                        <h4>Haldia Institute Of Technology</h4>
-                        <span class="timeline-date">2022 - 2026</span>
-                        <div class="timeline-grade">CGPA: 7.75/10</div>
-                    </div>
+        <section id="experience" class="section section-experience">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow"><span class="eyebrow-line"></span> EXPERIENCE &amp; LEARNING</p>
+                    <h2>Growing through <span class="text-gradient">hands-on work.</span></h2>
+                    <p class="section-intro">Internship experience and industry-oriented training grounded in practical assignments.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>12th Standard</h3>
-                        <h4>Government Kalyan Singh High School, Begusarai</h4>
-                        <span class="timeline-date">2021</span>
-                        <div class="timeline-grade">73.40%</div>
-                    </div>
+                <div class="experience-list">
+                    <article class="experience-card reveal">
+                        <div class="experience-rail"><span>01</span><span class="rail-line"></span><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+                        <div class="experience-content">
+                            <div class="experience-topline"><span class="experience-type">INTERNSHIP</span><span class="duration">01 Apr 2025 — 15 May 2025</span></div>
+                            <h3>Web Development Intern</h3>
+                            <p class="company"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> B. R. Ambedkar National Institute of Technology, Jalandhar</p>
+                            <p class="experience-location">Jalandhar, Punjab</p>
+                            <ul class="detail-list">
+                                <li>Developed and maintained a research group’s website using HTML, CSS, JavaScript, Python, and Flask, ensuring a responsive and user-friendly interface.</li>
+                                <li>Implemented front-end components and integrated them with Flask-based backend functionalities to enhance website performance.</li>
+                                <li>Collaborated with mentors and team members to understand project requirements, troubleshoot issues, and deliver assigned tasks within deadlines.</li>
+                                <li>Strengthened problem-solving, teamwork, and web development skills through hands-on knowledge in designing, testing, and optimizing the web application.</li>
+                            </ul>
+                            <div class="experience-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Flask</span></div>
+                        </div>
+                    </article>
+                    <article class="experience-card experience-card--accent reveal">
+                        <div class="experience-rail"><span>02</span><span class="rail-line"></span><i class="fa-solid fa-cloud-shield" aria-hidden="true"></i></div>
+                        <div class="experience-content">
+                            <div class="experience-topline"><span class="experience-type">FELLOWSHIP PROGRAM</span><span class="duration">05 Jan 2026 — 25 May 2026</span></div>
+                            <h3>Exceller Edge Fellowship Program</h3>
+                            <p class="company"><i class="fa-solid fa-building" aria-hidden="true"></i> Capgemini</p>
+                            <p class="experience-location">Software Development, Cloud, DevSecOps <span class="location-separator">·</span> Haldia, West Bengal</p>
+                            <ul class="detail-list">
+                                <li>Completed an industry-oriented training program covering Software Development Life Cycle (SDLC), Agile Scrum, Business Analysis, Cloud Computing, DevOps, DevSecOps, Cybersecurity, Platform Engineering, and Site Reliability Engineering (SRE).</li>
+                                <li>Gained hands-on knowledge of AWS and Microsoft Azure cloud platforms, including compute, storage, networking, identity and access management (IAM), monitoring, and security services.</li>
+                                <li>Worked with cloud automation, Infrastructure as Code (Terraform), Docker, Git, Jenkins, CI/CD concepts, and cloud security best practices through practical assignments and use cases.</li>
+                                <li>Developed knowledge of DevSecOps practices, secure SDLC, threat modeling, compliance automation, container security, and cloud governance frameworks.</li>
+                            </ul>
+                            <div class="experience-tags"><span>AWS</span><span>Azure</span><span>Terraform</span><span>Docker</span><span>Jenkins</span><span>DevSecOps</span><span>SRE</span></div>
+                        </div>
+                    </article>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>10th Standard</h3>
-                        <h4>Government Kalyan Singh High School, Begusarai</h4>
-                        <span class="timeline-date">2019</span>
-                        <div class="timeline-grade">76%</div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-projects">
+            <div class="container">
+                <div class="section-heading section-heading--split reveal">
+                    <div><p class="eyebrow"><span class="eyebrow-line"></span> SELECTED WORK</p><h2>Projects built with <span class="text-gradient">curiosity.</span></h2></div>
+                    <p class="section-intro">A mix of applied AI, data exploration, software engineering, and web development.</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card project-card--featured reveal">
+                        <div class="project-art project-art--ai"><div class="scan-lines"></div><span class="project-art-label">COMPUTER VISION / 01</span><div class="scan-frame"><span></span><span></span><span></span><span></span><i class="fa-solid fa-wave-square" aria-hidden="true"></i></div><div class="project-art-caption">ULTRASOUND → SEGMENTATION → INSIGHT</div></div>
+                        <div class="project-content"><div class="project-meta"><span>AI / MACHINE LEARNING</span><span>01</span></div><h3>Fetal Head Abnormality Detection</h3><p>Developed an AI-driven pipeline to detect fetal head abnormalities from ultrasound scans. Applied SPA-DE for image preprocessing to enhance region-of-interest clarity and improve image quality. Used Pix2PixHD GAN for synthetic data generation to balance the dataset and implemented segmentation using the UneXt architecture. Achieved an average IoU score of 75% (±2.34), demonstrating effective abnormality localization and reliable model performance.</p><div class="project-tech"><span>SPA-DE</span><span>Pix2PixHD</span><span>UneXt</span><span>GAN</span><span>Image Segmentation</span></div><div class="project-links"><a href="https://github.com/Iamaniketray/Fetal_Head_Abnormality_Detection" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> View code <i class="fas fa-arrow-up-right-from-square link-arrow" aria-hidden="true"></i></a></div></div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-art project-art--web"><div class="browser-art"><div class="browser-bar"><i></i><i></i><i></i><span>research.nitj.ac.in</span></div><div class="browser-body"><div class="browser-block browser-block--wide"></div><div class="browser-block"></div><div class="browser-block"></div><div class="browser-line"></div><div class="browser-line browser-line--short"></div></div></div><span class="project-art-label">WEB ENGINEERING / 02</span></div>
+                        <div class="project-content"><div class="project-meta"><span>WEB DEVELOPMENT</span><span>02</span></div><h3>Website Development — NIT Jalandhar</h3><p>Developed a dynamic and responsive website for a research group at NIT Jalandhar. Contributed to both frontend and backend development.</p><div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>ReactJS</span></div><div class="project-links"><a href="https://github.com/Iamaniketray/prototype" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> View code <i class="fas fa-arrow-up-right-from-square link-arrow" aria-hidden="true"></i></a></div></div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-art project-art--data"><span class="project-art-label">TIME SERIES / 03</span><div class="chart-art"><span class="chart-grid"></span><svg viewBox="0 0 420 150" role="img" aria-label="Illustrative time series chart"><path class="chart-area" d="M0 120 C25 105 36 120 55 94 S88 88 103 107 S132 70 151 81 S180 35 201 61 S228 70 245 48 S271 60 287 31 S315 55 333 23 S362 40 377 16 S400 28 420 4 L420 150 L0 150Z"></path><path class="chart-line" d="M0 120 C25 105 36 120 55 94 S88 88 103 107 S132 70 151 81 S180 35 201 61 S228 70 245 48 S271 60 287 31 S315 55 333 23 S362 40 377 16 S400 28 420 4"></path></svg><div class="chart-legend"><span>Observed</span><span>Trend</span><span>Seasonal</span></div></div></div>
+                        <div class="project-content"><div class="project-meta"><span>DATA ANALYSIS</span><span>03</span></div><h3>Time-Series ETS Decomposition</h3><p>Demonstrates ETS decomposition using Python to analyze time series data with additive and multiplicative models applied to International Airline Passengers dataset.</p><div class="project-tech"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Statsmodels</span></div><div class="project-links"><a href="https://github.com/Iamaniketray/Time-Series-ETS-Decomposition" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> View code <i class="fas fa-arrow-up-right-from-square link-arrow" aria-hidden="true"></i></a></div></div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-art project-art--ledger"><span class="project-art-label">JAVA / DESKTOP APP / 04</span><div class="ledger-art"><div class="ledger-head"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span>ChronoLedger</span><i class="fas fa-ellipsis" aria-hidden="true"></i></div><div class="ledger-entry"><span class="ledger-dot"></span><span><b>Entry recorded</b><small>Timestamp · verified</small></span><i class="fas fa-check" aria-hidden="true"></i></div><div class="ledger-entry"><span class="ledger-dot ledger-dot--violet"></span><span><b>Ledger secured</b><small>Local record · saved</small></span><i class="fas fa-check" aria-hidden="true"></i></div></div></div>
+                        <div class="project-content"><div class="project-meta"><span>SOFTWARE ENGINEERING</span><span>04</span></div><h3>ChronoLedger</h3><p>Java-based desktop application built using JavaFX to manage and track time-stamped ledger entries in a secure and organized manner.</p><div class="project-tech"><span>Java</span><span>OOPs</span><span>JavaFX</span><span>Java Swing</span><span>File Handling</span></div><div class="project-links"><a href="https://github.com/Iamaniketray/Chronoledger" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> View code <i class="fas fa-arrow-up-right-from-square link-arrow" aria-hidden="true"></i></a></div></div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-art project-art--portfolio"><span class="project-art-label">PERSONAL PROJECT / 05</span><div class="portfolio-art"><span class="portfolio-orbit"></span><span class="portfolio-orbit portfolio-orbit--two"></span><span class="portfolio-monogram">AK<span>.</span></span><span class="portfolio-caption">DESIGN → CODE → DEPLOY</span></div></div>
+                        <div class="project-content"><div class="project-meta"><span>WEB DEVELOPMENT</span><span>05</span></div><h3>Personal Portfolio Website</h3><p>Web developer with a strong foundation in HTML, CSS, and JavaScript, capable of creating responsive, accessible, and visually appealing websites that follow modern UI/UX principles. Knowledge in building academic and personal projects that demonstrate problem-solving skills, attention to detail, and clean coding practices. Proficient in transforming design concepts into functional interfaces while ensuring cross-browser compatibility and performance optimization. Passionate about continuous learning, keeping up with emerging web technologies, and applying technical skills to deliver effective solutions in a professional environment.</p><div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive UI</span></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section section-education">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow"><span class="eyebrow-line"></span> EDUCATION</p>
+                    <h2>Foundations for <span class="text-gradient">what’s ahead.</span></h2>
+                </div>
+                <div class="education-layout">
+                    <div class="education-feature glass-card reveal"><div class="education-watermark">HIT</div><span class="education-current"><i class="fas fa-circle" aria-hidden="true"></i> 2022 — 2026</span><span class="education-degree-label">BACHELOR OF TECHNOLOGY</span><h3>Computer Science Engineering<br><span>(AI &amp; ML)</span></h3><p class="education-institution">Haldia Institute of Technology</p><p class="education-place"><i class="fas fa-location-dot" aria-hidden="true"></i> Haldia, West Bengal</p><div class="education-score"><span>CGPA</span><strong>7.89</strong></div></div>
+                    <div class="education-history">
+                        <article class="education-entry reveal"><span class="education-year">2021</span><span class="education-marker"></span><div><span class="education-degree-label">SENIOR SECONDARY · BSEB</span><h3>Government Kalyan Singh High School, Shamho</h3><p>Begusarai, Bihar</p><strong>73.40%</strong></div></article>
+                        <article class="education-entry reveal"><span class="education-year">2019</span><span class="education-marker"></span><div><span class="education-degree-label">SECONDARY · CBSE</span><h3>Government Kalyan Singh High School, Shamho</h3><p>Begusarai, Bihar</p><strong>76%</strong></div></article>
+                        <div class="education-note reveal"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i><p>Computer Science Engineering with a specialization in <strong>Artificial Intelligence &amp; Machine Learning.</strong></p></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience & Internships</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <div class="card-header">
-                        <h3>Technology Job Simulation</h3>
-                        <span class="company">Deloitte</span>
-                    </div>
-                    <div class="card-body">
-                        <div class="duration">02 Jul, 2025 - 03 Jul, 2025</div>
-                        <p>Successfully completed the Deloitte Technology Job Simulation, gaining hands-on experience in coding, software development, and problem-solving.</p>
-                        <div class="skills-used">
-                            <span class="skill-pill">Architecture Diagram</span>
-                            <span class="skill-pill">Technical Communication</span>
-                            <span class="skill-pill">AWS Pricing</span>
-                        </div>
-                    </div>
+        <section id="certifications" class="section section-credentials">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow"><span class="eyebrow-line"></span> CERTIFICATIONS &amp; ACHIEVEMENTS</p>
+                    <h2>Always learning. <span class="text-gradient">Always building.</span></h2>
                 </div>
-                <div class="experience-card">
-                    <div class="card-header">
-                        <h3>Web Development Intern</h3>
-                        <span class="company">NIT Jalandhar</span>
-                    </div>
-                    <div class="card-body">
-                        <div class="duration">01 Apr, 2025 - 15 May, 2025</div>
-                        <p>Successfully completed a 45-day online internship contributing to the development of a research group's website.</p>
-                        <div class="skills-used">
-                            <span class="skill-pill">HTML</span>
-                            <span class="skill-pill">CSS</span>
-                            <span class="skill-pill">JavaScript</span>
-                            <span class="skill-pill">Python</span>
-                            <span class="skill-pill">Flask</span>
-                            <span class="skill-pill">SQL</span>
-                        </div>
-                    </div>
+                <div class="credentials-grid">
+                    <article class="credential-card reveal"><span class="credential-icon"><i class="fa-brands fa-aws" aria-hidden="true"></i></span><span class="credential-type">AWS · JOB SIMULATION</span><h3>Solutions Architecture Job Simulation</h3><p>Successfully completed the Solutions Architecture Job Simulation, gaining foundational knowledge in cloud computing, system design, and deployment strategies. Acquired practical understanding of core cloud concepts and services across AWS, Azure, and Google Cloud platforms.</p><div class="credential-tags"><span>AWS</span><span>Cloud architecture</span></div></article>
+                    <article class="credential-card reveal"><span class="credential-icon credential-icon--blue"><i class="fa-brands fa-google" aria-hidden="true"></i></span><span class="credential-type">GOOGLE CLOUD</span><h3>Applying AI Principles with Google Cloud</h3><p>Successfully completed the Applying AI Principles with Google Cloud course, gaining expertise in implementing responsible AI practices. Developed an understanding of ethical AI development, fairness, transparency, and the deployment of AI solutions aligned with Google’s AI principles.</p><div class="credential-tags"><span>Responsible AI</span><span>Google Cloud</span></div></article>
+                    <article class="credential-card reveal"><span class="credential-icon credential-icon--violet"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span><span class="credential-type">IN-HOUSE TRAINING</span><h3>Web Development, Machine Learning &amp; Cloud Computing</h3><p>Web Development, Machine Learning, and Cloud Computing training.</p><div class="credential-tags"><span>Python</span><span>React.js</span><span>AWS</span><span>Google Cloud</span></div></article>
+                    <article class="credential-card reveal"><span class="credential-icon credential-icon--orange"><i class="fa-solid fa-brain" aria-hidden="true"></i></span><span class="credential-type">AI / LEARNING</span><h3>Introduction to Large Language Models</h3><p>Strong foundation in LLM architecture, training methods, and real-world applications.</p><div class="credential-tags"><span>LLM Architecture</span><span>Prompt Engineering</span></div></article>
+                    <article class="credential-card reveal"><span class="credential-icon credential-icon--green"><i class="fa-brands fa-java" aria-hidden="true"></i></span><span class="credential-type">DUKE UNIVERSITY · COURSERA</span><h3>Java Programming</h3><p>Java programming fundamentals and problem-solving strategies via Coursera.</p><div class="credential-tags"><span>Java</span><span>OOPs</span><span>Problem solving</span></div></article>
+                    <article class="credential-card reveal"><span class="credential-icon credential-icon--rose"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></span><span class="credential-type">DELOITTE · JOB SIMULATION</span><h3>Technology Job Simulation</h3><p>Successfully completed the Deloitte Technology Job Simulation, gaining hands-on experience in coding, software development, and problem-solving.</p><div class="credential-tags"><span>Architecture Diagram</span><span>Technical Communication</span><span>AWS Pricing</span><span>02 Jul 2025 — 03 Jul 2025</span></div></article>
+                </div>
+                <div class="achievement-row reveal"><div class="achievement-lead"><span class="achievement-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></span><div><span class="eyebrow">HIGHLIGHTS</span><h3>Milestones worth celebrating</h3></div></div><div class="achievement-item"><strong>250+</strong><span>DSA problems solved in Java</span></div><div class="achievement-item"><strong>1st place</strong><span>College-level coding competition · Haldia Institute of Technology</span></div><div class="achievement-item"><strong>5 months</strong><span>Cloud Computing internship · AWS &amp; Microsoft Azure</span></div></div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-contact">
+            <div class="container">
+                <div class="contact-panel reveal">
+                    <div class="contact-glow" aria-hidden="true"></div>
+                    <div class="contact-copy"><p class="eyebrow"><span class="eyebrow-line"></span> LET’S CONNECT</p><h2>Have a good<br><span class="text-gradient">challenge in mind?</span></h2><p>I’m eager to contribute as a Software Developer, Cloud Engineer, or AI Engineer. Let’s talk about what we can build.</p><div class="contact-links"><a href="mailto:aniketbgs07@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> aniketbgs07@gmail.com</a><a href="tel:+919798901574"><i class="fas fa-phone" aria-hidden="true"></i> +91-9798901574</a><a href="https://github.com/Iamaniketray" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> github.com/Iamaniketray <i class="fas fa-arrow-up-right-from-square external-arrow" aria-hidden="true"></i></a><span><i class="fas fa-location-dot" aria-hidden="true"></i> Begusarai, Bihar, India</span></div></div>
+                    <div class="contact-form-card"><div class="form-heading"><span class="form-heading-icon"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i></span><div><h3>Send a message</h3><p>It’ll open in your email app.</p></div></div><form class="contact-form" id="contact-form">
+                        <div class="form-row"><div class="form-group"><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="Aniket Kumar" autocomplete="name" required></div><div class="form-group"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required></div></div>
+                        <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="What would you like to discuss?" required></div>
+                        <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell me a little about it..." required></textarea></div>
+                        <button type="submit" class="btn btn--primary btn--submit">Prepare email <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                    </form></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Website Development - NIT Jalandhar</h3>
-                        <p>Developed a dynamic and responsive website for a research group at NIT Jalandhar. Contributed to both frontend and backend development.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">ReactJS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Iamaniketray/prototype" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                                View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Time-Series ETS Decomposition</h3>
-                        <p>Demonstrates ETS decomposition using Python to analyze time series data with additive and multiplicative models applied to International Airline Passengers dataset.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">NumPy</span>
-                            <span class="tech-tag">Matplotlib</span>
-                            <span class="tech-tag">Statsmodels</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Iamaniketray/Time-Series-ETS-Decomposition" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                                View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>ChronoLedger</h3>
-                        <p>Java-based desktop application built using JavaFX to manage and track time-stamped ledger entries in a secure and organized manner.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">OOPs</span>
-                            <span class="tech-tag">JavaFX</span>
-                            <span class="tech-tag">Java Swing</span>
-                            <span class="tech-tag">File Handling</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Iamaniketray/Chronoledger" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                                View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications & Achievements</h2>
-            <div class="certifications-grid">
-                <div class="cert-card">
-                    <h3>In-House Training</h3>
-                    <p>Web Development, Machine Learning, and Cloud Computing training</p>
-                    <div class="cert-skills">
-                        <span class="cert-skill">Python</span>
-                        <span class="cert-skill">React.js</span>
-                        <span class="cert-skill">AWS</span>
-                        <span class="cert-skill">Google Cloud</span>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <h3>Solutions Architecture Job Simulation</h3>
-                    <p>Foundational knowledge in cloud computing, system design, and deployment strategies</p>
-                    <div class="cert-skills">
-                        <span class="cert-skill">AWS</span>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <h3>Introduction to Large Language Models</h3>
-                    <p>Strong foundation in LLM architecture, training methods, and real-world applications</p>
-                    <div class="cert-skills">
-                        <span class="cert-skill">LLM Architecture</span>
-                        <span class="cert-skill">Prompt Engineering</span>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <h3>Java Programming: Duke University</h3>
-                    <p>Java programming fundamentals and problem-solving strategies via Coursera</p>
-                    <div class="cert-skills">
-                        <span class="cert-skill">Java</span>
-                        <span class="cert-skill">OOPs</span>
-                        <span class="cert-skill">Problem Solving</span>
-                    </div>
-                </div>
-            </div>
-            <div class="achievement-highlight">
-                <i class="fas fa-trophy"></i>
-                <span>Solved 150+ Data Structures & Algorithms problems in Java</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:aniketbgs07@gmail.com">aniketbgs07@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+919798901574">+91-9798901574</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/Iamaniketray" target="_blank">GitHub</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Begusarai, Bihar, India</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-group">
-                            <label class="form-label" for="name">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Aniket Kumar. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="https://github.com/Iamaniketray" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:aniketbgs07@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scroll-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="app.js"></script>
+    <footer class="footer"><div class="container footer-content"><a class="footer-brand" href="#home"><span class="brand-mark">A<span>K</span></span> Aniket Kumar</a><p>Cloud systems · Secure delivery · Intelligent products</p><div class="footer-right"><span>© <span id="current-year">2026</span> Aniket Kumar</span><a href="https://github.com/Iamaniketray" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a><a href="mailto:aniketbgs07@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a><a href="#home" class="back-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></a></div></div></footer>
+    <button class="scroll-to-top" id="scroll-to-top" type="button" aria-label="Scroll to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+    <script src="app.js" defer></script>
 </body>
 </html>
